@@ -19,6 +19,10 @@ class App extends React.Component {
     }
   }
 
+  handleChange(event) {
+    this.setState({value: event.target.value});
+  }
+
   send() {
     fetch('/user/login', {
       method: 'POST',
@@ -31,11 +35,13 @@ class App extends React.Component {
       })
     })
   }
+  
 
   render() {
     return  <form>
-      <input placeholder="email" />
-      <input type="password" />
+      <input placeholder="email" value={this.state.value} onChange={this.handleChange} />
+      <input type="password" value={this.state.value} onChange={this.handleChange} />
+      
       <button onClick={this.send} >Send</button>
     </form>
     
