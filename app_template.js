@@ -12,7 +12,7 @@ const html = () => `<!DOCTYPE html>
   <script>
    
   </script>
-  <script src="../dist/app.js"></script>
+  <script src="/public/dist/app.js"></script>
 
 </body>
 </html>`

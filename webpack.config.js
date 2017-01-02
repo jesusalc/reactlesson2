@@ -11,7 +11,7 @@ const config = {
   devtool: 'source-map',
   entry: './src',
   output: {
-    path: path.resolve(__dirname, 'dist'),
+    path: path.resolve(__dirname, 'public/dist'),
     filename: 'app.js',
     library: 'App',
   },
