@@ -7,6 +7,8 @@
     "babel": "babel --presets es2015 src/*.js -o public/bundle.js",
     "test": "mocha",
     "start": "node server.js",
+    "webpack": "webpack",
+    "webpack:watch": "webpack -w",
     "watchscss": "nodemon -e scss -x \"npm run build-css\""
   },
   "repository": {
@@ -20,7 +22,15 @@
   },
   "homepage": "https://github.com/jesusalc/reactlesson2#readme",
   "devDependencies": {
+    "babel-core": "^6.21.0",
+    "babel-loader": "^6.2.10",
     "mocha": "^3.2.0",
-    "supertest": "^2.0.1"
+    "supertest": "^2.0.1",
+    "webpack": "^2.2.0-rc.3"
+  },
+  "dependencies": {
+    "babili-webpack-plugin": "0.0.7",
+    "react": "^15.4.1",
+    "react-dom": "^15.4.1"
   }
 }
