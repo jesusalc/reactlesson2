@@ -5,7 +5,7 @@ const app = express()
 const html = make_html()
 
 
-//app.use(express.static('public'))
+app.use(express.static('public'))
 
 app.get('/api/init', function(req, res) {
   res.status(200).json([[0,0,0],[0,0,0],[0,0,0]]);
