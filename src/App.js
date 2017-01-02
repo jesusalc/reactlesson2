@@ -10,6 +10,15 @@ class App extends React.Component {
 
 
   }
+
+
+  makeDefaults() {
+    return {
+      email: '',
+      password: ''
+    }
+  }
+
   send() {
     fetch('/user/login', {
       method: 'POST',
